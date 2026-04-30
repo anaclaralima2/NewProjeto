@@ -1,4 +1,2 @@
 function confirmar() {
-   return window.confirm("Realmente deseja ir para outra página?");
-
-}
+   return window.confirm("Deseja comprar este produto?");}
