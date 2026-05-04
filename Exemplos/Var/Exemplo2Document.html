@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo VAR no Document</title>
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        input {
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+       #resultado {
+            margin-top: 20px;
+            font-size: 18px;
+            color:green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo VAR no Document</h1>
+    <label for="">Digite seu nome</label>
+    <input type="text" id="nome">
+
+    <button onclick="mostrarNome()">Mostrar</button>
+
+    <p id="resultado"></p>
+    <script>
+        function mostrarNome() {
+            var nome = document.getElementById("nome").value;
+            document.getElementById("resultado").innerHTML = "Olá, " + nome;
+            window.alert("Seu nome é: " + nome);
+            console.log("Seu nome é: " + nome);
+        }
+    </script>
+</body>
+</html>

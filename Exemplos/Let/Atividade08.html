@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 08</title>
+</head>
+
+<body>
+    <h1>Soma de dois números</h1>
+    <label for="">Digite o primeiro número:</label>
+
+    <input type="number" id="numero1">
+
+    <label for="">Digite o segundo número:</label>
+
+    <input type="number" id="numero2">
+
+    <button onclick="somar()">Somar</button>
+
+    <p id="resultado"></p>
+
+    <script>
+        function somar() {
+            let numero1 = Number(document.getElementById("numero1").value);
+            let numero2 = Number(document.getElementById("numero2").value);
+            let numeros = numero1 + numero2;
+            document.getElementById("resultado").innerHTML = "O resultado é: " + numeros;
+        }
+    </script>
+</body>
+
+</html>
